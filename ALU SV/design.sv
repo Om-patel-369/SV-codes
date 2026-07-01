@@ -15,14 +15,14 @@ module ALU(my_if alu_if);
 //     else begin
     case (alu_if.modsel)
       
-      0: alu_if.res1 = alu_if.val1+alu_if.val2;
-      1: alu_if.res1 = alu_if.val1-alu_if.val2;
-      2: alu_if.res2 = alu_if.val1*alu_if.val2;
+      0: alu_if.res1 = alu_if.val1 + alu_if.val2;  
+      1: alu_if.res1 = alu_if.val1 - alu_if.val2;
+      2: alu_if.res2 = alu_if.val1 * alu_if.val2;
       3:begin
         if (alu_if.val1==0 || alu_if.val2==0)
           $error ("INVALID INPUTS : 0 in division");
         else
-          alu_if.res2 = alu_if.val1/alu_if.val2;end
+          alu_if.res2 = alu_if.val1 / alu_if.val2;end
         default:$display ("INVALID MOD");
       
     endcase
