@@ -2,4 +2,6 @@
 RAM-fifo-ALU ---
 fully working DUT and TB ---
 back to back write read  ---
-IN ALU arithmatic operations with OP-MODE.
+IN ALU arithmatic operations with OP-MODE---
+
+for easy reading, testbench code kept flat - all classes in one file.
